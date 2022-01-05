@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background-color: #950740 ;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px ;
+}
+
+
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: blanchedalmond;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background-color:#1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    /* display: none; */
+}
+
+@media(max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;    width: 100%;   height: 100vh;  background: #2c3e50;   top: 80px;
+        left: -100%;  text-align: center;  transition: all .5s;
+    }
+    nav ul li{
+        display: block;  margin:50px 0;      line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.hover,a.active{
+        background: none;  color: #0082e6;
+    }
+    #check:checked ~ul{
+        left: 0;
+    }
+    .checkbtn:hover nav ul {
+        display: block;
+    }
+}
+
+
+/* section one starts  */
+
+
+section{
+      /*   height: 100vh; */ display: flex; justify-content:space-around;   align-items: center;
+      margin-top: 10px;
+}
+#figSec1{
+    height: 350px;  overflow: hidden;
+}
+#f8img{
+    height: 350px;
+}
+/* section one ends  */
+
+/* section two starts  */
+.container{
+    border: 1px solid grey;
+    height: 200px;
+    width: 90%;
+}
+
+.floatdiv{
+    float: left;
+    width: 25%;
+    height: 300px;
+    border-right: 1.7px grey solid;
+    margin-top: 10px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;   
+    align-items: center;
+    font-weight: bolder;
+    font-size:x-large;
+}
+
+.floatdiv .icon{
+    font-size: 50px;
+    color: #E64398;
+}
+
+/* section three starts  */
+.sec3div{
+    width: 90%;
+    height: 110px;
+    background-color: #501f3a;
+}
+.iconsDiv{
+    float: left;
+    width: 14%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;   
+    align-items: center;
+    font-weight: bolder;
+    font-size: 10px;
+}
+.iconsDiv .faicons{
+    color:#cafafe;
+    font-size: 25px;
+}
+/* section 3 ends*/
+
+
+/* section 4 starts  */
+.divSec4{
+    border-top: 2px solid #950740;
+    border-bottom: 2px solid #950740;
+    width: 90%;
+    height: 130px;
+}
+.sasa{
+    float: left;
+    width: 47%;
+    margin-top: 40px;
+}
+
+.rightdiv .mobile-icon{
+    font-size: 40px;
+}
+/* section 4 ends  */
+
+/* section 5 starts  */
+.secFive{
+    /* width: 90%; */
+    height: 150px;
+}
+.divsecFive{
+    width: 40%;
+    height: 90px;
+    border: 2px solid #29648a ;
+    display: flex;
+
+}
+
+.divsecFive .leftdiv{
+    width: 25%;
+    /* border: #29648a solid 3px; */
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.divsecFive .rightdiv{
+    width: 75%;
+    /* border: seagreen solid 3px; */
+    background-color: #374785;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.divsecFive .leftdiv h1{
+        color: #f64672; 
+        font-size: 30px;
+}
+
+.divsecFive .rightdiv h1{
+    color: #66f6f1;
+}
+/* section 5 ends  */
+
+/* section 7 starts  */
+.secSeven .contain{
+    height: 500PX;
+    width: 90%;
+    background-color:#f7f7f7;
+     border-top: 1.3px solid #950740; 
+     border-bottom: 1.3px solid #950740;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.secSeven .contain .box{
+    height: 240PX;
+    width: 70%;
+    background-color:#832625;
+    margin-top: 80px;
+    display: flex;
+    border:black solid 2px;
+}
+.secSeven .contain .box .leftDiv{
+
+    height: 240PX;
+}
+.secSeven .contain .box .rightDiv{
+
+}
+
+.buttonApply{
+        background-color:#832625; /* Green */
+        border: 1px white solid;
+        color: #e7e7e7;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: 10px;
+}
+/* section 7 ends  */
+
