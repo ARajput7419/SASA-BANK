@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+section{
+    display: flex;
+    justify-content:center;  
+    align-items: center;
+    margin-top: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(149,7,64, 0.25);
+    width: 23%;
+    text-align: center;
+    height: 80vh;
+}
+
+.fa{
+    margin: 12px;
+}
+.icon{
+    width:41%; 
+    height: 130px;
+    margin-top: 20%;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .contact_btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #950740;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+.details{
+    width: 66%;
+    text-align: center;
+    height: 80vh;
+    margin-left: 0%;
+  }
+
+  .name{
+    background-color: #d7bcc7;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items:flex-start;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #950740;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.25);
+    margin-left: 4px;
+  }
+  th, td {
+    padding: 8px;
+    align-items: center;
+  }
+  td{
+    text-align: center;
+  }
+  #datas{
+    margin-top: 80px;
+  }
+  #box{
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  
+  #btm{
+    margin-top: 5.5%;
+    background-color: antiquewhite;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 14px;
+    padding-left: 40px;
+    padding-right: 340px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.25);
+    margin-left: 4px;
+  }
+  
+  li{
+    list-style: disc;
+    line-height: 1.5;
+    color: rgb(83, 77, 77);
+  }
+
+  @media(max-width:858px){
+    .icon{
+      width:41%; 
+      height: 80px;
+    }
+    .card {
+      padding: 5px;
+      height: 80vh;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.25);
+      margin-left: 3px;
+    }
+    th, td {
+      padding: 8px;
+      align-items: center;
+      font-size: 12px;
+    }
+    td{
+      text-align: center;
+    }
+    .data{
+      margin-left: 10px;
+    }
+
+    #btm{
+      margin-top: 50px;
+      padding: 8px;
+      font-size: 14px;
+      margin-left: 14px;
+    }
+    #btm ul li{
+      list-style: none;
+    }
+  }
+
+
+  @media(max-width:667px){
+    .icon{
+      width:43%; 
+      height: 65px;
+    }
+    .card {
+      padding: 8px;
+      height: 90vh;
+    }
+    .card p{
+      font-size: 13px;
+    }
+    .name{
+      margin-top: -15px;
+    }
+    #box{
+      width: 100%;
+      height: 40vh;
+      padding: 50px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    #btm{
+     margin-top: 30px;
+    }
+  }
+
+  /* section refer starts  */
+.seceight{
+  height: 150px;
+  margin-top: 80px;
+  margin-left: 150px;
+}
+.divsec8{
+  width: 60%;
+  height: 90px;
+  border: 2px solid #29648a ;
+  display: flex;
+
+}
+.divsec8 .leftdiv{
+  width: 35%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.divsec8 .leftdiv h1 a{
+  font-size: 27px;
+  color: #0e8bde;
+}
+.divsec8 .rightdiv{
+  width: 65%;
+  background-color: #97074140;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.divsec8 .leftdiv h1{
+      color: #f64672; 
+      font-size: 30px;
+}
+
+.divsec8 .rightdiv h1{
+  color: #950740;
+}
+
+@media(max-width:858px){
+  .divsec8{
+  width: 85%;
+  padding-left: 15px;
+  font-size: 15px;
+  }
+  .divsec8 .leftdiv h1{
+      font-size: 20px;
+  }
+  .divsec8 .leftdiv h1 a{
+    font-size: 17px;
+    color: #0e8bde;
+  }
+}
+/* section refer ends  */
+
+

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="payTransfer.css">
+        <link rel="stylesheet" href="ATMpin.css">
+        <title>Update Contact Number</title>
+        <style>
+        #box{
+            height: 60vh;
+            width: 90%;
+            box-shadow: 0 8px 12px 0 #2c171f40
+        }
+        @media(max-width:858px){
+            #topdiv{
+                height: 10vh;
+            }
+            #box{
+            height: 55vh;
+            width: 90%;
+            box-shadow: 0 8px 12px 0 #2c171f40
+            }
+            .pay_form div label{
+                font-size: 14px;
+            }
+        }
+        </style>
+        
+    </head>
+    <body>
+        <section class="secOne">
+            <div id="box">
+                <div id="topdiv">
+                    <h1>Change Contact Details</h1>
+                </div>
+                <div id="btmdiv">
+                        <label for="" id="msg">Please Enter the following details : </label>
+                        <form action="" class="pay_form">
+                            <div>
+                                <label for="">Enter Your new contact Number <span style="color: red;">*</span> </label>
+                                <input type="number">
+                            </div>
+                            <div>
+                                <label for="">Enter OTP <span style="color: red;">*</span> </label>
+                                <input type="number">
+                            </div> 
+                                <input type="checkbox" > <span>I accept the <a href="" style="color: rgb(41, 82, 227); font-size: 16px;">Terms & Conditions</a> </span>
+                            </span> <br>
+                            <div class="inputBox" >
+                                <input type="submit" value="Submit" required="required">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

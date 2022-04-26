@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 80%;
+    background-color: rgb(225, 239, 250);
+}
+
+#container{
+    width: 75%;
+    height: 85%;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.5;
+    color: #950740;
+}
+
+#line{
+    border-top: 1px solid rgb(54, 53, 53);
+    /* background-color: rgb(155, 151, 151); ; */
+}
+#pinfo{
+    line-height: 2.5;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:100;
+    columns: #950740;
+}
+
+.inputBox{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.label{
+    line-height: 2.6;margin-top: 2%
+}
+
+#radiobox{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 21px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:  #d45353;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  .buttons:hover {background-color: #680202}
+
+  .buttons:active {
+    background-color:#942525 ;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.labell{
+  margin-right:4%;
+  height: 4vh;
+  width: 30%;
+  font-size:18px;
+}
+.dd{
+  height: 5vh;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mfd{
+  margin-left:4%;
+}
+
+
+@media(max-width:858px){
+  #heading{
+    font-size: 20px;
+  }
+  #vh{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .dd{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .dd label{
+    font-size: 20px;
+  }
+  .mfd{
+    margin-left: 0px;
+  }
+  #heading{
+    line-height: 1.2;
+  }
+  .dd .label2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  #radiobox
+  {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    width : 94%;
+  }
+  #container{
+    width:95%;
+  }
+}

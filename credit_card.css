@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center;
+}
+
+section{
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center;
+    margin-top: 10px;
+    width: 80%;
+    background-color: rgb(225, 239, 250);
+}
+
+#container{
+    width: 75%;
+    height: 85%;
+}
+
+#heading{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.5;
+    color: #950740;
+}
+
+#line{
+    border-top: 1px solid rgb(54, 53, 53);
+}
+#pinfo{
+    line-height: 2.5;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:100;
+    columns: #950740;
+}
+
+.inputBox{
+    display: flex; 
+    justify-content:space-between; 
+    align-items: center; 
+}
+
+.label{
+    line-height: 2.6;margin-top: 2%
+}
+
+#radiobox{
+    display: flex; 
+    justify-content:space-evenly; 
+    align-items: center;
+    width: 60%;
+}
+
+.buttons {
+    margin-bottom: 50px;
+    margin-top: 3%;
+    margin-left: -30px;
+    display: inline-block;
+    padding: 12px 21px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color:  #d45353;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .buttons:hover {background-color: #680202}
+  
+  .buttons:active {
+    background-color:#942525 ;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+  @media(max-width:952px){
+    #heading{
+        font-size: 25px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    #radiobox{
+        display: flex; 
+        justify-content:space-evenly; 
+        align-items: center;
+        width: 94%;
+    }
+    .buttons {
+        margin-top: 20px;
+        margin-left: 12px;
+        display: inline-block;
+        padding: 6px 10px;
+      }
+  } 
+
+    @media(max-width:375px){
+        #radiobox{
+            display: flex; 
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: center;
+        }
+    }
+  }
