@@ -77,3 +77,22 @@
         margin-left: 44%;
     }
 }
+
+#otp{
+    background-color: rgb(83,83,133);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translateY(4px);
+    padding: 0.7% 3%;
+    font-size: 18px;
+}
+#otp:hover {
+    background-color: black;
+}
+          
+#otp:active {
+    background-color: rgb(83,83,133);
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translateY(4px);
+}

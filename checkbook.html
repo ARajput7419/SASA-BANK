@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="ATMpin.css">
         <style>
         #box{
-            height: 60vh;
+            height: 80vh;
             width: 90%;
             box-shadow: 0 8px 12px 0 #2c171f40
+        }
+        #otpbox{
+            margin-left: 36%;
         }
         </style>
     </head>
@@ -21,23 +24,34 @@
                 </div>
                 <div id="btmdiv">
                         <label for="" id="msg">Please Enter the following details : </label>
-                        <form action="" class="pay_form">
+                        <form action="" class="pay_form" onsubmit="fun()">
                             <div>
                                 <label for="">Enter Account Number <span style="color: red;">*</span> </label>
-                                <input type="number">
+                                <input type="text">
                             </div>
-                            <div>
+                            <input type="button" value="Get OTP" id="otp"  onclick="showhidden()">
+                            <div id="hide1" >
                                 <label for="">Enter OTP <span style="color: red;">*</span> </label>
-                                <input type="number">
+                                <input type="text" id="otpbox">
                             </div>
-                                <input type="checkbox" > <span>I accept the <a href="" style="color: rgb(41, 82, 227); font-size: 16px;">Terms & Conditions</a> </span>
-                            </span> <br>
-                            <div class="inputBox" >
+                            <div class="inputBox" id="hide2" >
                                 <input type="submit" value="Submit" required="required">
                             </div>
                     </form>
                 </div>
             </div>
         </section>
+
+        
+        <script>
+            function fun(){
+                alert("Applied  successfully");  
+            }
+
+            function showhidden(){
+                document.getElementById("hide1").style.display = "block";
+                document.getElementById("hide2").style.display = "block";
+            }
+        </script>
     </body>
 </html>

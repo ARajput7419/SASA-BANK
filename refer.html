@@ -27,7 +27,8 @@
                     <input type="text" id="number" value="91">
                     <h5>Enter registered email id</h5>
                     <input type="email" id="mail" placeholder="Email ">
-                    <button>Generate my referral link</button>
+                    <input type="button" class="button" value="Generate my referral id" onclick=" referid()">
+                    <h4 id="rid" >your id : </h4>
                 </div>
             </div>
 
@@ -48,6 +49,12 @@
             </div>
             <div style="height: 100px;"></div>
         </section> 
+        <script>
+            function referid(){
+                document.getElementById("rid").style.display = "block";
+                document.getElementById("rid").style.fontSize = "20px";
+            }
+        </script>
     </body>
 
 </html>

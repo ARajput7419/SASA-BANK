@@ -110,6 +110,13 @@ section::before
 {
     width: 47%;
 }
+#hide1{
+    display: none;
+}
+#hide2{
+    display: none;
+}
+
 .container .contactForm .formBox .inputBox.w100
 {
     width: 100%;
@@ -153,6 +160,19 @@ section::before
     color: #950740;
     font-weight: 500;
 }
+#otp{
+    position: relative;
+    cursor: pointer;
+    background: #950740;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 1% 5%;
+    margin-bottom: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
 .container .contactForm .formBox .inputBox input[type="submit"]
 {
     position: relative;

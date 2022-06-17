@@ -28,13 +28,13 @@
                 <div style="margin-top: 2%;">
                     <label for="" class="label" >Phone</label>
                     <div class="inputBox">
-                        <input type="number" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
+                        <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
                     </div>
                 </div>
                 <div style="margin-top: 2%;">
                     <label for="" class="label" >Date of Birth</label>
                     <div class="inputBox">
-                        <input type="datetime" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Date of birth">
+                        <input type="date" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Date of birth">
                     </div>
                 </div>
                 <div style="margin-top: 2%;">
@@ -75,10 +75,16 @@
                     </div>
                 </div>
                 <div style="margin-top: 2%; margin-left: 40%; margin-bottom: 50px;">
-                    <button class="buttons">Submit Appplication</button>
+                    <button class="buttons" onclick="alertbox()" >Submit Appplication</button>
                 </div>
             </div>
            
         </section>
+
+        <script>
+             function alertbox(){
+                alert("Submitted successfully");  
+            }
+        </script>
     </body>
 </html>
