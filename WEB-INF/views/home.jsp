@@ -1,12 +1,11 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core"  prefix = "c" %>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
     <head>
         <title>SASA BANK</title>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="<c:url value="resources/css/index.css"/>">
+        <link rel="stylesheet" href="<c:url value="resources/css/index.css"/>" >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
@@ -19,7 +18,7 @@
                 </label>
                 <label for="" class="logo">SASA</label>
                 <UL>
-                    <li> <a href="" class="active">Home</a> </li>
+                    <li> <a href="index" class="active">Home</a> </li>
                     <li> <a href="aboutus">About</a> </li>
                     <li> <a href="contact">Contact</a> </li>
                     <li> <a href="banking">Banking</a> </li>
@@ -50,22 +49,22 @@
                 <div class="floatdiv abc">
                     <a href="">Banking</a>
                     <i class="fa fa-university icon" aria-hidden="true"></i>
-                    <p>SAFE AND EASY BANKING </p>
+                    <p> <a href="login">SAFE AND EASY BANKING</a>  </p>
                 </div>
                 <div class="floatdiv pay abc">
                     <a href="">Pay</a>
                     <i class="fa fa-inr icon" aria-hidden="true"></i>
-                    <p> SPENDING IS REWARDING</p>
+                    <p> <a href="login">  SPENDING IS REWARDING</a> </p>
                 </div>
                 <div class="floatdiv">
-                    <a href="">Trading</a>
-                    <i class="fa fa-bar-chart icon" aria-hidden="true"></i>
-                    <p> SECURE YOUR MONEY <BR> AND WATCH IT GROW</p>
+                    <a href="">Refer & earn</a>
+                    <i class="fa fa-share-alt icon" aria-hidden="true"></i>
+                    <p> <a href="login">REFER YOUR FRIEND <BR> AND EARN REWARDS </a></p>
                 </div>
                 <div class="floatdiv" style="border-right: 0PX;">
                     <a href="">Account</a>
                     <i class="fa fa-user-circle-o icon" aria-hidden="true"></i>
-                    <p>ACCESS YOUR ACCOUNT</p>
+                    <p><a href="login">ACCESS YOUR ACCOUNT</a></p>
                 </div>
             </div>
         </section>
@@ -76,32 +75,28 @@
             <div class="sec3div"  data-aos="fade-right">
                 <DIV class="iconsDiv">
                     <i class="fa fa-gift faicons" aria-hidden="true"></i> <br>
-                    <p>OFFERS</p>
+                    <p> <a href="login"> OFFERS</a>  </p>
                 </DIV>
                 <DIV class="iconsDiv">
                     <i class="fa fa-credit-card faicons" aria-hidden="true"></i> <br>
-                    <p style="">CARD <br> SERVICES</p>
+                    <p style=""> <a href="login">CARD <br> SERVICES</a> </p>
                 </DIV>
                 <DIV class="iconsDiv">
                     <i class="fa fa-laptop faicons" aria-hidden="true"></i> <br>
-                    <p>DIGITAL <br> ACCOUNTS</p>
+                    <p>  <a href="login">DIGITAL <br> ACCOUNTS</a> </p>
                 </DIV>
                 <DIV class="iconsDiv">
                     <i class="fa fa-money faicons" aria-hidden="true"></i> <br>
-                    <p>DEPOSIT</p>
+                    <p>  <a href="login">  DEPOSIT </a> </p>
                 </DIV>
                 <DIV class="iconsDiv">
                     <i class="fa fa-volume-control-phone faicons" aria-hidden="true"></i> <br>
-                    <p>CUSTOMER <br> Support</p>
+                    <p> <a href="login">  CUSTOMER <br> Support </a> </p>
                 </DIV>
                  <DIV class="iconsDiv">
                     <i class="fa fa-universal-access faicons" aria-hidden="true"></i> <br>
-                    <p>INSURANCE</p>
+                    <p> <a href="login">INSURANCE</a> </p>
                 </DIV>
-                <!-- <DIV class="iconsDiv">
-                    <i class="fa fa-list-alt faicons" aria-hidden="true"></i> <br>
-                    <p>DOWNLOAD <br> FORM</p>
-                </DIV> -->
 
             </div>
         </section>
@@ -141,20 +136,21 @@
             <div class="partition" >
                 <div class="top">
                     <figure>
-                        <img src="<c:url value="resources/img/inv.jpg" />" alt="loading..." >
+                        <img src="<c:url value="resources/img/bb.jpeg"/>" alt="loading..." >
                     </figure>
                 </div>
                 <div class="leftbtm">
                     <p>
                         <!-- <br> <br> -->
-                        <h1>Invest</h1>
+                        <h1>We make banking easy</h1>
                         <div>
                             <span class="margins">
-                                Investing is an effective way to put  your <br> money to work and potentially build wealth.
+                                At SASA, we believe in making things easier for our customers
+
                             </span>
                         </div>
                        <span  class="explore">
-                        <a href="">Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <a href="index">Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                        </span>
                     </p>
                 </div>
@@ -164,21 +160,21 @@
             <div class="partition parttn" >
                 <div class="top">
                     <figure>
-                        <img src="<c:url value="resources/img/dp.jpeg" />" alt="loading..." >
+                        <img src="<c:url value="resources/img/dp.jpeg"/>" alt="loading..." >
                     </figure>
                 </div>
                 <div class="leftbtm">
                     <p>
-                        <h1>Fixed Deposit</h1>
+                        <h1>Account Features</h1>
                         <div>
                         <span class="margins">
-                            Secure your money and watch it grow <br> Flexible tenures and attractive interest rates  <br>
+                            We want to make sure you have services to support your banking needs.
 
                         </span>
 
                         </div>
                        <span class="explore">
-                        <a href="" >Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <a href="index" >Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                        </span>
 
                     </p>
@@ -197,12 +193,12 @@
                         <h1>Loan</h1>
                         <div>
                         <span class="margins">
-                            loans at attractive interest rates with  higher <br> loan eligibility and lower EMI
+                            loans at attractive interest rates with  higher loan eligibility and lower EMI
                         </span>
 
                         </div>
                        <span class="explore">
-                        <a>Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        <a href="index" >Explore Menu </a>  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                        </span>
                     </p>
                 </div>
@@ -259,7 +255,7 @@
                                         </li>
                                     </span>
                             </p>
-                            <BUTton class="buttonApply">APPLY</BUTton>
+                            <button class="buttonApply" onclick="location.href='login'" >APPLY</button>
                         </div>
                     </div>
                 </div>
