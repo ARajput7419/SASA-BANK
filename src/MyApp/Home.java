@@ -1,7 +1,6 @@
 package MyApp;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping("/")
@@ -22,6 +21,10 @@ public class Home{
     @RequestMapping("/banking")
     public String banking(){
         return "banking";
+    }
+    @RequestMapping("/loan")
+    public String loan(){
+        return "loan";
     }
 
 }

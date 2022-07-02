@@ -8,6 +8,7 @@
 
 body{
     font-family: montserrat;
+    overflow-x: hidden;
 }
 
 nav{
@@ -205,7 +206,11 @@ section{
             width: 99.99%;
         }
 }
-
+    @media(max-width:412px){
+        .container .floatdiv {
+            text-align: center;
+        }
+    }
 
 /* section one ends  */
 
@@ -231,9 +236,17 @@ section{
     font-size:x-large;
 }
 
-.container .floatdiv p{
+.container .floatdiv p a{
     color:#3aafa9;  
      font-size: 15px; font-family: sans-serif;
+}
+.container .floatdiv p a.active,.container .floatdiv p a:hover{
+    color: green;
+    background-color: white;
+    transition: .5s;
+}
+.container .floatdiv a.active, .container .floatdiv a:hover{
+    background-color: white;
 }
 
 .floatdiv .icon{
@@ -295,7 +308,7 @@ section{
     text-align: center;
     padding: 12px;
 }
-.secthree .sec3div  .iconsDiv p{
+.secthree .sec3div  .iconsDiv p a{
     color:#f4fafa  ; 
     font-size: 14px; 
     font-family: sans-serif;
@@ -414,6 +427,7 @@ section{
         font-size: 14px;
     }
 }
+
 /* section 4 ends  */
 
 /* section 5 starts  */
@@ -450,7 +464,9 @@ section{
 .explore{
     margin-left: 35px; font-weight: bolder; font-size: 20px;
 }
-
+.margins{
+    padding: 9%;
+}
 @media(max-width:858px){
     .secfive{
         width: 90%;
@@ -490,9 +506,7 @@ section{
 
 /* section 5 ends  */
 /* section 6 starts  */
-.divSec4{
 
-}
 /* section 6 ends  */
 /* section 7 starts  */
 .secSeven .contain{
@@ -569,6 +583,8 @@ section{
     }
 }
 
+
+
 /* section 7 ends  */
 
 /* section 8 starts  */
@@ -604,6 +620,12 @@ section{
 
 .divsec8 .rightdiv h1{
     color: #66f6f1;
+}
+
+
+button.active,button:hover{
+    background-color:#1b9bff;
+    transition: .5s;
 }
 
 @media(max-width:858px){

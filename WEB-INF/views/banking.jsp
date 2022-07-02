@@ -1,0 +1,58 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="<c:url value="resources/css/banking.css"/>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Banking</title>
+    </head>
+    <body>
+        <section class="secmarque">
+            <div class="msg">
+                <marquee behavior="" direction=""><p> SASA never asks for your Card/PIN/OTP/CVV details on phone, message or email. Please do not click on links received on your email or mobile asking your Bank/Card details.|    Register yourself for Doorstep banking services on 18001038989 / 180012345621 or log on to sasabank.in and avail the services. Stay Home, Stay Safe.
+                </p></marquee>
+            </div>
+        </section>
+        <div class="container">
+                <div class="personal box">
+                    <div class="card">
+                        <img src="<c:url value="resources/img/icon.png"/>" alt="John" class="icon">
+                        <br> <br>
+                        <h1>Personal Banking</h1>  <br> <br>
+                        <p class="title">Your personal banking services that gives you complete control over all your banking demands </p> <br>
+                        <br> <br>
+                        <p><button onclick="location.href='login'" >Login</button></p>
+                    </div>
+                </div>
+
+                <div class="corporate box">
+                    <div class="card">
+                        <img src="<c:url value="resources/img/icon.png"/>" alt="John" class="icon"> <br> <br>
+                        <h1>Corporate Banking</h1>  <br> <br>
+                        <p class="title">Corporate Banking application to administer and manage non personal accounts online.</p> <br>
+                        <br>  <br>
+                        <p><button onclick="location.href='login'" >Login</button></p>
+                    </div>
+                </div>
+        </div>
+
+
+        <!-- section two starts  -->
+  <section class="sectwo">
+    <div class="box ">
+        <div class="left">
+            <h1>Read Before you Invest </h1>
+            <h2>It's important to read all scheme related documents in detail before investing </h2>
+            <button class="explore_btn">Know more<i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
+        </div>
+       <div class="right">
+
+       </div>
+    </div>
+</section>
+    <!-- section two ends  -->
+
+    </body>
+</html>

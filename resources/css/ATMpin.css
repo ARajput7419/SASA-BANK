@@ -18,7 +18,7 @@ section{
 
 /* Section one starts  */
 #box{
-    height: 94vh;
+    height: 102vh;
     width: 90%;
     box-shadow: 0 8px 12px 0 #2c171f40
 }
@@ -54,10 +54,34 @@ section{
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    margin-top: 10px;
+    margin-left: 74%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inputBox input[type='button']{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
     margin-top: 14px;
     margin-left: 74%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+#hide1{
+    display: none;
+}
+
+#hide2{
+    display: none;
+}
+#hide3{
+    display: none;
+}
+
 
 @media(max-width:858px){
     .inputBox input[type='submit']{
