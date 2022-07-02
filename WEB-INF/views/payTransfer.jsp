@@ -1,0 +1,89 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="<c:url value="resources/css/payTransfer.css"/>">
+        <link rel="stylesheet" href="<c:url value="resources/css/profile.css"/>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Transfer</title>
+    </head>
+    <body>
+        <section>
+            <div class="card">
+                <img src="<c:url value="resources/img/icon.png"/>" alt="John" class="icon"> <br> <br>
+                <h1>John Doe</h1>  <br> <br>
+                <p class="title">CEO & Founder, Example</p> <br>
+                <p>Harvard University</p> <br> <br>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <br> <br> <br>
+                <p><button class="contact_btn" onclick="location.href='Contact'">Contact</button></p>
+            </div>
+            <!-- section right starts  -->
+            <div class="details">
+
+                <div class="data">
+                    <table>
+                        <caption>
+                            <div class="name">
+                                <p>Transaction accounts</p>
+                            </div>
+                        </caption>
+                        <thead>
+                          <tr>
+                            <th>Account No. </th>
+                            <th>Account Holder Name</th>
+                            <th>Branch</th>
+                            <th>Available Balance</th>
+                          <tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1000000201</td>
+                            <td>ABC</td>
+                            <td>xxxxxxxxxxx</td>
+                            <td>$200000000000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <form action="" class="pay_form">
+                    <div>
+                        <label for="">Selected account Number <span style="color: red;">*</span> </label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Beneficiary name </label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Beneficiary account Number <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Re-enter Beneficiary account <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">IFSC code <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Amount <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+                    <!-- <div> -->
+                        <span style="font-size: 15px; ">
+                            <input type="checkbox" > <span>I accept the <a href="" style="color: rgb(41, 82, 227); font-size: 16px;">Terms & Conditions</a> </span>
+                        </span>
+                    <div class="inputBox" >
+                            <input type="submit" value="Submit" required="required">
+                    </div>
+                </form>
+        </section>
+    </body>
+
+</html>

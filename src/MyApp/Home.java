@@ -27,11 +27,9 @@ public class Home{
         return "loan";
     }
     @RequestMapping("/vehicle_loan")
-    public String vLoan()
-    {
+    public String vLoan() {
         return "vehicle_loan";
     }
-
     @RequestMapping("/home_loan")
     public String hLoan()
     {
@@ -42,4 +40,61 @@ public class Home{
     {
         return "business_loan";
     }
+    @RequestMapping("/profile")
+    public String profile()
+    {
+        return "profile";
+    }
+    @RequestMapping("/update_password")
+    public String update_password()
+    {
+        return "update_password";
+    }
+    @RequestMapping("/signUp")
+    public String signUp()
+    {
+        return "signup";
+    }
+
+    @RequestMapping("/refer")
+    public String refer()
+    {
+        return "refer";
+    }
+
+    @RequestMapping("/payTransfer")
+    public String payTransfer()
+    {
+        return "payTransfer";
+    }
+
+    @RequestMapping("/menu")
+    public String menu()
+    {
+        return "menu";
+    }
+
+    @RequestMapping("/logout")
+    public String logout()
+    {
+        return "logout";
+    }
+
+    @RequestMapping("/login")
+    public String login()
+    {
+        return "login";
+    }
+    @RequestMapping("/learnLoan")
+    public String learnLoan()
+    {
+        return "learnLoan";
+    }
+    @RequestMapping("/imp_link")
+    public String imp_link()
+    {
+        return "imp_link";
+    }
+
+
 }

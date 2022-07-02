@@ -1,1 +1,1 @@
-Entity.User=javax.persistence.Entity
+MyApp.Home=org.springframework.stereotype.Component
