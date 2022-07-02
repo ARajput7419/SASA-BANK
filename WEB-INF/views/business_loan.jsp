@@ -1,0 +1,224 @@
+<%@ taglib uri ="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BUSINESS_LOAN | SASA</title>
+    <link rel="stylesheet" href="<c:url value="resources/css/home_loan.css"/>">
+  </head>
+  <body>
+
+    <!--section 2 starts -->
+    <section>
+      <section>
+          <div id="container">
+              <h1 id="heading">BUSINESS LOAN Application Form</h1>
+              <div id="line"></div>
+              <span id="pinfo">Personal Information</span>
+              <form action="" onsubmit="alertbox()" >
+              <div>
+                  <label for="" class="label" style="">Name</label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; ;" placeholder="First Name">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;" placeholder="Last Name">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Email</label>
+                  <div class="inputBox">
+                      <input type="email" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Email">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Phone</label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Date of Birth</label>
+                  <div class="inputBox labell" >
+                    <input type = "date">
+                      <!-- <input type="datetime" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Date of birth"> -->
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Gender</label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for=""> Male</label>
+                      <input type="radio" class="rbtn" > <label for=""> Female</label>
+                      <input type="radio" class="rbtn" > <label for=""> Other</label>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Marital Status</label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for=""> Married</label>
+                      <input type="radio" class="rbtn" > <label for=""> Divorced</label>
+                      <input type="radio" class="rbtn" > <label for=""> Single</label>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Occupation</label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Occupation">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Account Type</label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for=""> Savings</label>
+                      <input type="radio" class="rbtn" > <label for=""> Current</label>
+                      <input type="radio" class="rbtn" > <label for=""> Fixed/call deposit</label>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Signature</label>
+                  <div class="inputBox">
+                      <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="upload signature">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Address</label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="House Number/Name">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="House Number/Name">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%; ;" placeholder="City">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="State">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;;" placeholder="Country">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%;" placeholder="PinCode">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" > BUSINESS DETAILS</label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="Business Address">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="Employer id number">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%; ;" placeholder="Landlord Name">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="Percent Ownership">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;;" placeholder="State">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%;" placeholder="PinCode">
+                  </div>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;;" placeholder="Country">
+                      <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%;" placeholder="Phone">
+                  </div>
+                  <div style="margin-top: 2%;">
+                      <label for="" class="label" >Business is </label>
+                      <div id="radiobox">
+                          <input type="radio" class="rbtn"> <label for="">New</label>
+                          <input type="radio" class="rbtn" > <label for="">Existing</label>
+                      </div>
+                  </div>
+                  <div style="margin-top: 2%;" id="sss">
+                      <label for="" class="label" >Type of organisation </label>
+                      <div id="radiobox" class="ss">
+                          <input type="radio" class="rbtn"> <label for="">Self proprietorship</label>
+                          <input type="radio" class="rbtn" > <label for="">Partnership</label>
+                          <input type="radio" class="rbtn" > <label for="">Corporation</label>
+                          <input type="radio" class="rbtn" > <label for="">Other</label>
+                      </div>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >PAN Card Number </label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
+                  </div>
+                  <label for="" class="label" >Upload Pan Card Image</label>
+                  <div class="inputBox">
+                      <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Pan card ">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Aadhar Card Number </label>
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
+                  </div>
+                  <label for="" class="label" >Upload Aadhar Card Image</label>
+                  <div class="inputBox">
+                      <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Pan card ">
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Upload passport size photograph</label>
+                  <div class="inputBox">
+                      <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Pan card ">
+                  </div>
+              </div>
+
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Property Ownership</label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for=""> Owned</label>
+                      <input type="radio" class="rbtn" > <label for="">Rented</label>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Are you employed ? If yes, please provide employment id </label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for="">yes</label>
+                      <input type="radio" class="rbtn" > <label for="">No</label>
+                  </div>
+              </div>
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Upload Employment Id </label>
+                  <div class="inputBox">
+                      <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Employment Id">
+                  </div>
+              </div>
+              <h1 id="heading">Loan Details</h1>
+              <div style="margin-top: 2%;">
+
+                  <div class="inputBox">
+                      <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="AMOUNT NEEDED">
+                  </div> <br>
+              </div>
+              <div class="dd">
+                <label for="" class="labell label2">Loan Application Date</label>   <input type = "date" class="labell">
+              </div>
+              <div class="dd">
+                <label for="" class="labell label2">First Loan Repayment Date </label>   <input type = "date" class="labell">
+              </div>
+              <div class="dd">
+                <label for="" class="labell label2">Last Loan Repayment Date </label>   <input type = "date" class="labell">
+              </div>
+
+              <div style="margin-top: 2%;">
+                  <label for="" class="label" >Total installments </label>
+                  <div id="radiobox">
+                      <input type="radio" class="rbtn"> <label for="">one</label>
+                      <input type="radio" class="rbtn" > <label for="">Two</label>
+                        <input type="radio" class="rbtn" > <label for="">Three</label>
+                  </div>
+              </div>
+
+
+              <div style="margin-top: 2%; margin-left: 40%; margin-bottom: 50px;">
+                  <button class="buttons">Submit Appplication</button>
+              </div>
+              </form>
+          </div>
+
+      </section>
+    </section>
+    <!--section 2 ends -->
+    <script>
+        function alertbox(){
+           alert("Submitted successfully");
+       }
+   </script>
+
+  </body>
+</html>

@@ -26,5 +26,20 @@ public class Home{
     public String loan(){
         return "loan";
     }
+    @RequestMapping("/vehicle_loan")
+    public String vLoan()
+    {
+        return "vehicle_loan";
+    }
 
+    @RequestMapping("/home_loan")
+    public String hLoan()
+    {
+        return "home_loan";
+    }
+    @RequestMapping("/business_Loan")
+    public String bLoan()
+    {
+        return "business_loan";
+    }
 }
