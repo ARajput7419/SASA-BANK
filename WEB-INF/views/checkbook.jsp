@@ -1,0 +1,57 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Apply for CheckBook</title>
+        <link rel="stylesheet" href="<c:url value="resources/css/payTransfer.css"/>" >
+        <link rel="stylesheet" href="<c:url value="resources/css/ATMpin.css"/>">
+        <style>
+        #box{
+            height: 80vh;
+            width: 90%;
+            box-shadow: 0 8px 12px 0 #2c171f40
+        }
+        #otpbox{
+            margin-left: 36%;
+        }
+        </style>
+    </head>
+    <body>
+        <section class="secOne">
+            <div id="box">
+                <div id="topdiv">
+                    <h1>Apply CheckBook</h1>
+                </div>
+                <div id="btmdiv">
+                        <label for="" id="msg">Please Enter the following details : </label>
+                        <form action="" class="pay_form" onsubmit="fun()">
+                            <div>
+                                <label for="">Enter Account Number <span style="color: red;">*</span> </label>
+                                <input type="text">
+                            </div>
+                            <input type="button" value="Get OTP" id="otp"  onclick="showhidden()">
+                            <div id="hide1" >
+                                <label for="">Enter OTP <span style="color: red;">*</span> </label>
+                                <input type="text" id="otpbox">
+                            </div>
+                            <div class="inputBox" id="hide2" >
+                                <input type="submit" value="Submit" required="required">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <script>
+            function fun(){
+                alert("Applied  successfully");
+            }
+
+            function showhidden(){
+                document.getElementById("hide1").style.display = "block";
+                document.getElementById("hide2").style.display = "block";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="<c:url value="resources/css/payTransfer.css"/>">
+        <link rel="stylesheet" href="<c:url value="resources/css/ATMpin.css"/>">
+        <title>ATM Pin Generation</title>
+    </head>
+    <body>
+        <section class="secOne">
+            <div id="box">
+                <div id="topdiv">
+                    <h1>Online ATM Pin Generation</h1>
+                </div>
+                <div id="btmdiv">
+                        <label for="" id="msg">Please Enter the following details : </label>
+                        <form action="profile.html" class="pay_form"  onsubmit="fun()" >
+                            <div>
+                                <label for="">Enter ATM card Number <span style="color: red;">*</span> </label>
+                                <input type="tel" >
+                            </div>
+                            <div>
+                                <label for="">Enter ATM card Expiry Date <span style="color: red;">*</span> </label>
+                                <input type="text" style="width:13%" placeholder="mm / yyyy" >
+                            </div>
+                            <div>
+                                <label for="">Enter ATM 4 digit Old pin <span style="color: red;">*</span> </label>
+                                <input type="password">
+                            </div>
+                            <div>
+                                <label for="">Enter ATM 4 digit New pin <span style="color: red;">*</span> </label>
+                                <input type="password">
+                            </div>
+                            <label for="" id="note">If you don't have any pin then please enter 00 as your old pin</label> <br>
+                            <div>
+                                <label for="">ReEnter ATM 4 digit New pin <span style="color: red;">*</span> </label>
+                                <input type="password">
+
+                            </div>
+                            <input type="button" value="Get OTP" id="otp"  onclick="showhidden()">
+                            <div id="hide1">
+                                <label for="">Enter OTP <span style="color: red;">*</span> </label>
+                                <input type="text">
+                            </div>
+
+                            <span style="font-size: 15px; " id="hide2">
+                                <input type="checkbox" required > <span>I accept the <a href="" style="color: rgb(41, 82, 227); font-size: 16px;">Terms & Conditions</a> </span>
+                            </span> <br>
+                            <div class="inputBox" id="hide3">
+                                <input type="submit" value="Submit" required="required">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function fun(){
+                alert("Pin Updated  successfully");
+            }
+            function showhidden(){
+                document.getElementById("hide1").style.display = "block";
+                document.getElementById("hide2").style.display = "block";
+                document.getElementById("hide3").style.display = "block";
+                var btn = document.getElementById("otp");
+                btn.value = 'Resend OTP';
+            }
+        </script>
+    </body>
+</html>

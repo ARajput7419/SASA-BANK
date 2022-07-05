@@ -35,7 +35,7 @@ public class Home{
     {
         return "home_loan";
     }
-    @RequestMapping("/business_Loan")
+    @RequestMapping("/business_loan")
     public String bLoan()
     {
         return "business_loan";
@@ -95,6 +95,35 @@ public class Home{
     {
         return "imp_link";
     }
+    @RequestMapping("/blockATM")
+    public String block_atm(){
+        return "blockATM";
+    }
+    @RequestMapping("exploreLoan")
+    public String exploreLoan()
+    {
+        return "exploreLoan";
+    }
+    @RequestMapping("customer_care")
+    public String customer_care(){
+        return "customer_care";
+    }
+    @RequestMapping("credit_card")
+    public String credit_card(){
+        return "credit_card";
+    }
+    @RequestMapping("checkbook")
+    public String checkbook(){
+        return "checkbook";
+    }
+    @RequestMapping("ATMpin")
+    public String atmPin(){
+        return "ATMpin";
+    }
 
+    @RequestMapping("accountOpening")
+    public String accountOpening(){
+        return "accountOpening";
+    }
 
 }

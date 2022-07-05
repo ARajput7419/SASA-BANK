@@ -1,0 +1,114 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <title>Explore Loan</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="<c:url value="resources/css/exploreLoan.css"/>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- section left starts  -->
+        <section>
+            <div class="card">
+                <div class="contentTable">
+                    <h1>KEY ADVANTAGES</h1>
+                    <div></div>
+                    <ul class="list">
+                        <li>  Hassle-free loan processing </li>
+                        <li>  Instant disbursal </li>
+                        <li>  Free to use the funds </li>
+                        <li>  Minimum Interest rates</li>
+                        <li>  No need to provide collaterals </li>
+                        <li>  Easy documentation </li>
+                        <li>  Pocket-friendly repayment </li>
+                        <li>  Flexible tenors</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- section right starts  -->
+            <div class="details">
+                <div id="heading">
+                   <h1>Get your loan whenever you want</h1>
+                </div>
+                <!-- partition starts -->
+                <div class="maindiv" >
+                    <div class="partition" >
+                        <div class="top">
+                            <figure>
+                                <img src="<c:url value="resources/img/hl.jpg"/>" alt="loading..." >
+                            </figure>
+                        </div>
+                        <div class="leftbtm">
+                            <p>
+                                <!-- <br> <br> -->
+                                <h1>Home Loan</h1>
+                                <div>
+                                    <span class="margins">
+                                     Now make home As <br> per your Dream
+                                    </span>
+                                </div>
+                            <span  class="explore">
+                                <a href="home_loan">Apply Now  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i> </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="partition parttn" >
+                        <div class="top">
+                            <figure>
+                                <img src="<c:url value="resources/img/vl.jfif"/>" alt="loading..." >
+                            </figure>
+                        </div>
+                        <div class="leftbtm">
+                            <p>
+                                <h1>Vehicle Loan</h1>
+                                <div>
+                                <span class="margins">
+                                   Save your time with <br> your private vehicle <br>
+                                </span>
+
+                                </div>
+                            <span class="explore">
+                                <a href="vehicle_loan" >Apply Now   <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="partition" >
+                        <div class="top">
+                            <figure>
+                                <img src="<c:url value="resources/img/loan.png"/>" alt="loading...">
+                            </figure>
+                        </div>
+                        <div class="leftbtm">
+                            <p>
+                                <h1>Business Loan</h1>
+                                <div>
+                                <span class="margins">
+                                   Get loan for Business <br> & increase earnings
+                                </span>
+                                </div>
+
+                                <span class="explore">
+                                    <a href="business_Loan">Apply Now  <i class="fa fa-chevron-circle-right" aria-hidden="true"> </i></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- partition ends  -->
+                <div id="bottom" >
+                    <h3> If you are an NRI & looking to borrow a loan, then you have to submit id proofs to the lender</h3>
+                    <p> Copy of your passport, Visa Copy, Bank statements of last 2 years, Salary certificate of salary slip, Proof of identity, residence,Income & assets
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section one ends  -->
+
+    </body>
+</html>

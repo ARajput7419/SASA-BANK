@@ -1,0 +1,91 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<html>
+    <head>
+        <title>Credit card Application</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="<c:url value="resources/css/credit_card.css"/>">
+    </head>
+    <body>
+        <section>
+            <div id="container">
+                <h1 id="heading">SASA Credit Card Form</h1>
+                <div id="line"></div>
+                <span id="pinfo">Personal Information</span>
+                <div>
+                    <label for="" class="label" style="">Name</label>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px; ;" placeholder="First Name">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px;" placeholder="Last Name">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Email</label>
+                    <div class="inputBox">
+                        <input type="email" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Email">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Phone</label>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Phone">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Date of Birth</label>
+                    <div class="inputBox">
+                        <input type="date" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Date of birth">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Address</label>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="House Number/Name">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 100%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="House Number/Name">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%; ;" placeholder="City">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;" placeholder="State">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px; margin-bottom: 2%;;" placeholder="Country">
+                        <input type="text" style=" width: 48%; height: 50px; padding: 5px;margin-bottom: 2%;" placeholder="PinCode">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Marital Status</label>
+                    <div id="radiobox">
+                        <input type="radio" class="rbtn"> <label for=""> Married</label>
+                        <input type="radio" class="rbtn" > <label for=""> Divorced</label>
+                        <input type="radio" class="rbtn" > <label for=""> Single</label>
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Occupation</label>
+                    <div class="inputBox">
+                        <input type="text" style=" width: 100%; height: 50px; padding: 5px;" placeholder="Occupation">
+                    </div>
+                </div>
+                <div style="margin-top: 2%;">
+                    <label for="" class="label" >Signature</label>
+                    <div class="inputBox">
+                        <input type="image" style=" width: 100%; height: 50px; padding: 5px;" placeholder="upload signature">
+                    </div>
+                </div>
+                <div style="margin-top: 2%; margin-left: 40%; margin-bottom: 50px;">
+                    <button class="buttons" onclick="alertbox()" >Submit Appplication</button>
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+             function alertbox(){
+                alert("Submitted successfully");
+            }
+        </script>
+    </body>
+</html>

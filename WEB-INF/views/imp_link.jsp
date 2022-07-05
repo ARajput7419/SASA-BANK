@@ -42,7 +42,7 @@
         </tr>
         <tr>
           <td class="c1">8</td>
-          <td><a href="BlockATM">SASA: How to block your ATM card </a></td>
+          <td><a href="blockATM">SASA: How to block your ATM card </a></td>
         </tr>
         <tr>
           <td class="c1">9</td>
