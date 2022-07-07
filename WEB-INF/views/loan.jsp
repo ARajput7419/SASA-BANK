@@ -24,7 +24,7 @@
                   <ul style="font-weight: bold; color: whitesmoke; font-size: 25px; line-height: 2.5; font-family:sans-serif;">
                    <li style="color: #e037f7;">APPLY ONLINE </li>
                       <LI> <a href="vehicle_loan" style="color: whitesmoke;">  VEHICLE  LOANS</a></LI>
-                      <li>  <a href="business_Loan"  style="color: whitesmoke;">BUSINESS  LOANS</a> </li>
+                      <li>  <a href="business_loan"  style="color: whitesmoke;">BUSINESS  LOANS</a> </li>
                       <LI> <a href="home_loan" style="color: whitesmoke;"> HOME  LOANS</a></LI>
                   </ul>
                 </div>
@@ -70,7 +70,7 @@
                         <div class="left">
                             <span >BIG DREAMS START WITH SMART PLANS</span>
                         </div>
-                        <div class="right"><button class="button" onclick="location.href='signup' " >Register </button></div>
+                        <div class="right"><button class="button" onclick="location.href='signUp' " >Register </button></div>
                     </div>
                 </div>
 
