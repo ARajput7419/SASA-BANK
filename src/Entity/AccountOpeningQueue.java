@@ -1,18 +1,22 @@
 package Entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.sql.Date;
 
 @Entity
-public class User {
+public class AccountOpeningQueue {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    int requestNum;
     private String firstName ;
     private String lastName;
     private Date dob;
-    @Id private String account_id;
     private String address;
     private String mobile;
     private String email_address;
-    private String password;
     private String gender;
     private String martialStatus;
     private String accountType;
@@ -24,6 +28,14 @@ public class User {
     private String country;
     private String state;
     private String pinCode;
+
+    public int getRequestNum() {
+        return requestNum;
+    }
+
+    public void setRequestNum(int requestNum) {
+        this.requestNum = requestNum;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -49,14 +61,6 @@ public class User {
         this.dob = dob;
     }
 
-    public String getAccount_id() {
-        return account_id;
-    }
-
-    public void setAccount_id(String account_id) {
-        this.account_id = account_id;
-    }
-
     public String getAddress() {
         return address;
     }
@@ -79,14 +83,6 @@ public class User {
 
     public void setEmail_address(String email_address) {
         this.email_address = email_address;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getGender() {
