@@ -12,6 +12,7 @@ public class Main {
                 .addAnnotatedClass(Message.class)
                 .addAnnotatedClass(User.class)
                 .addAnnotatedClass(VehicleLoan.class)
+                .addAnnotatedClass(Money.class)
                 .buildSessionFactory();
 
 
