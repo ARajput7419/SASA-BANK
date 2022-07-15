@@ -1,10 +1,11 @@
 package Entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 
 @Entity
-public class User {
+public class User  implements Serializable {
     private String firstName ;
     private String lastName;
     private Date dob;

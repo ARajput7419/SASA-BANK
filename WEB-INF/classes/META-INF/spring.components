@@ -1,1 +1,1 @@
-MyApp.Home=org.springframework.stereotype.Component
+dao.ATMDAO=org.springframework.stereotype.Component

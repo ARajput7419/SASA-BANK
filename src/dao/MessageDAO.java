@@ -1,39 +1,42 @@
 package dao;
+
 import Entity.HomeLoan;
+import Entity.Message;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
 import javax.transaction.Transactional;
 
 @Repository
-public class HomeLoanDAO {
+public class MessageDAO {
     @Autowired
     SessionFactory sessionFactory;
 
     @Transactional
-    public void save(HomeLoan homeLoan){
+    public void save(Message message){
         Session session = sessionFactory.getCurrentSession();
-        session.save(homeLoan);
+        session.save(message);
     }
 
 
     @Transactional
-    public void delete(HomeLoan homeLoan){
+    public void delete(Message message){
         Session session = sessionFactory.getCurrentSession();
-        session.delete(homeLoan);
+        session.delete(message);
 
     }
 
     @Transactional
-    public void update(HomeLoan homeLoan){
+    public void update(Message message){
         Session session = sessionFactory.getCurrentSession();
-        session.update(homeLoan);
+        session.update(message);
     }
 
     @Transactional
-    public HomeLoan get(int id){
+    public Message get(int id){
         Session session = sessionFactory.getCurrentSession();
-        return session.get(HomeLoan.class,id);
+        return session.get(Message.class,id);
     }
 }

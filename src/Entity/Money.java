@@ -8,7 +8,7 @@ import javax.persistence.OneToOne;
 public class Money {
 
     @Id
-    @OneToOne()
+    @OneToOne
     @JoinColumn(name = "account_account_id")
     private User account;
     private long amount;
